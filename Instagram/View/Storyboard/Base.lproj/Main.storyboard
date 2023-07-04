@@ -35,7 +35,7 @@
                         <viewLayoutGuide key="safeArea" id="WKF-YF-Y2q"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="" image="globe" catalog="system" id="9J9-X3-7Yc"/>
+                    <tabBarItem key="tabBarItem" title="" image="magnifyingglass" catalog="system" id="9J9-X3-7Yc"/>
                     <navigationItem key="navigationItem" id="Sni-Nx-cEi"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MqD-9h-kbE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -69,7 +69,7 @@
                         <viewLayoutGuide key="safeArea" id="Lgt-Nf-6eL"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="" image="bell" catalog="system" id="wBM-VF-YRA"/>
+                    <tabBarItem key="tabBarItem" title="" image="heart" catalog="system" id="wBM-VF-YRA"/>
                     <navigationItem key="navigationItem" id="j8v-Oh-nnd"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EsD-Ur-9c3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -120,7 +120,7 @@
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <color key="selectedImageTintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="selectedImageTintColor" systemColor="labelColor"/>
                     </tabBar>
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="BAf-EH-DAl"/>
@@ -215,11 +215,14 @@
         <segue reference="BAf-EH-DAl"/>
     </inferredMetricsTieBreakers>
     <resources>
-        <image name="bell" catalog="system" width="125" height="128"/>
-        <image name="globe" catalog="system" width="128" height="123"/>
+        <image name="heart" catalog="system" width="128" height="107"/>
         <image name="house" catalog="system" width="128" height="104"/>
+        <image name="magnifyingglass" catalog="system" width="128" height="117"/>
         <image name="person" catalog="system" width="128" height="121"/>
         <image name="plus" catalog="system" width="128" height="113"/>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

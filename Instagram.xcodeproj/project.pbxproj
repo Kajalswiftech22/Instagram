@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		0121942064C6C34C5D97AA87 /* Pods_Instagram.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB9FF3D31DBF32D9A5A6D0BD /* Pods_Instagram.framework */; };
+		EC9178F22A528C3E0032853B /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9178F12A528C3E0032853B /* StorageManager.swift */; };
+		EC9178F42A52918A0032853B /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9178F32A52918A0032853B /* Extensions.swift */; };
 		ECE62E002A513A5200965495 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECE62DFF2A513A5200965495 /* AppDelegate.swift */; };
 		ECE62E022A513A5200965495 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECE62E012A513A5200965495 /* SceneDelegate.swift */; };
 		ECE62E042A513A5200965495 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECE62E032A513A5200965495 /* HomeViewController.swift */; };
@@ -37,6 +39,8 @@
 		8AAD52E13C9E0569A101B5D7 /* Pods-Instagram.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Instagram.release.xcconfig"; path = "Target Support Files/Pods-Instagram/Pods-Instagram.release.xcconfig"; sourceTree = "<group>"; };
 		BB9FF3D31DBF32D9A5A6D0BD /* Pods_Instagram.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Instagram.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D83115BF1AE643C0680BB7C6 /* Pods-Instagram.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Instagram.debug.xcconfig"; path = "Target Support Files/Pods-Instagram/Pods-Instagram.debug.xcconfig"; sourceTree = "<group>"; };
+		EC9178F12A528C3E0032853B /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
+		EC9178F32A52918A0032853B /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		ECE62DFC2A513A5200965495 /* Instagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Instagram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECE62DFF2A513A5200965495 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ECE62E012A513A5200965495 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -115,6 +119,7 @@
 			isa = PBXGroup;
 			children = (
 				ECE62E162A513B1D00965495 /* Resources */,
+				ECE62E132A513AE400965495 /* Model */,
 				ECE62E142A513AED00965495 /* View */,
 				ECE62E152A513AFF00965495 /* Controller */,
 				ECE62E0D2A513A5300965495 /* Info.plist */,
@@ -155,7 +160,8 @@
 				ECE62E012A513A5200965495 /* SceneDelegate.swift */,
 				ECE62E3B2A518AA500965495 /* DatabaseManager.swift */,
 				ECE62E3D2A518AC300965495 /* AuthManager.swift */,
-				ECE62E132A513AE400965495 /* Model */,
+				EC9178F12A528C3E0032853B /* StorageManager.swift */,
+				EC9178F32A52918A0032853B /* Extensions.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -321,11 +327,13 @@
 				ECE62E1B2A513CC000965495 /* CameraViewController.swift in Sources */,
 				ECE62E232A513DDC00965495 /* RegistrationViewController.swift in Sources */,
 				ECE62E312A513EFF00965495 /* PostEditorViewController.swift in Sources */,
+				EC9178F22A528C3E0032853B /* StorageManager.swift in Sources */,
 				ECE62E252A513E2100965495 /* PostViewController.swift in Sources */,
 				ECE62E3C2A518AA500965495 /* DatabaseManager.swift in Sources */,
 				ECE62E1F2A513CD900965495 /* NotificationViewController.swift in Sources */,
 				ECE62E2F2A513E9900965495 /* SearchResultViewController.swift in Sources */,
 				ECE62E212A513DCB00965495 /* LoginViewController.swift in Sources */,
+				EC9178F42A52918A0032853B /* Extensions.swift in Sources */,
 				ECE62E2D2A513E8E00965495 /* SearchViewController.swift in Sources */,
 				ECE62E042A513A5200965495 /* HomeViewController.swift in Sources */,
 				ECE62E3E2A518AC300965495 /* AuthManager.swift in Sources */,
