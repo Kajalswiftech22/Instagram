@@ -143,7 +143,8 @@ class LoginViewController: UIViewController {
             DispatchQueue.main.async {
                 if success {
                     //user logged in
-                    self.dismiss(animated: true, completion: nil)
+                    self.performSegue(withIdentifier: "loginToDashboard", sender: nil)
+//                    self.dismiss(animated: true, completion: nil)
                 }
                 else{
                     //error occured
@@ -164,7 +165,19 @@ class LoginViewController: UIViewController {
         vc.title = "Create Account"
         present(UINavigationController(rootViewController: vc), animated: true)
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if (segue.identifier == "loginToDashboard") {
+            
+            if let secondVC = segue.destination as? TabBarViewController
+            {
+//                secondVC.get_image = imageView.image
+//                secondVC.image_name = txtEnterText.text
+            }
+        }
+    }
 }
+
 extension LoginViewController: UITextFieldDelegate {
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         if textField == usernameEmailField {

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Mfj-G6-FpR">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="L6E-np-lpP">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
@@ -83,20 +83,41 @@
                     <view key="view" contentMode="scaleToFill" id="bYt-FP-jFE">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gr6-6D-uyO">
+                                <rect key="frame" x="0.0" y="303" width="393" height="217"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <connections>
+                                    <action selector="click:" destination="v4s-IU-BXy" eventType="touchUpInside" id="Hqs-ku-kju"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="13f-82-e8n"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                        <constraints>
+                            <constraint firstItem="13f-82-e8n" firstAttribute="trailing" secondItem="gr6-6D-uyO" secondAttribute="trailing" id="GNk-1q-dOD"/>
+                            <constraint firstItem="13f-82-e8n" firstAttribute="bottom" secondItem="gr6-6D-uyO" secondAttribute="bottom" constant="200" id="H6l-dp-NAs"/>
+                            <constraint firstItem="gr6-6D-uyO" firstAttribute="top" secondItem="13f-82-e8n" secondAttribute="top" constant="200" id="Wp7-eW-xlj"/>
+                            <constraint firstItem="gr6-6D-uyO" firstAttribute="leading" secondItem="13f-82-e8n" secondAttribute="leading" id="diX-xM-Vzy"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="person" catalog="system" id="LX5-vo-i71"/>
-                    <navigationItem key="navigationItem" id="cOL-Bq-F6W"/>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="cOL-Bq-F6W">
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="square.and.arrow.up.circle.fill" catalog="system" id="FzF-lm-XTw"/>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gXL-Fl-OZJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2732" y="-46"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Item-->
         <scene sceneID="n7T-MP-o2E">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="OaV-QT-zC8" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="hHA-zW-O63"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="WWO-cn-syZ">
                         <rect key="frame" x="0.0" y="59" width="393" height="44"/>
@@ -111,10 +132,11 @@
             </objects>
             <point key="canvasLocation" x="-69" y="-771"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Tab Bar View Controller-->
         <scene sceneID="muk-UL-BBY">
             <objects>
-                <tabBarController id="Mfj-G6-FpR" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="TabBarViewController" id="Mfj-G6-FpR" customClass="TabBarViewController" customModule="Instagram" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="otf-Q1-CfK"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="TLu-CY-QaP">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -123,16 +145,34 @@
                         <color key="selectedImageTintColor" systemColor="labelColor"/>
                     </tabBar>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="BAf-EH-DAl"/>
-                        <segue destination="Dxy-HC-1wQ" kind="relationship" relationship="viewControllers" id="P4f-UQ-CvU"/>
-                        <segue destination="cHY-Ya-ahx" kind="relationship" relationship="viewControllers" id="xEI-Jw-FHv"/>
-                        <segue destination="ISK-kf-b0f" kind="relationship" relationship="viewControllers" id="ih7-Uh-WCp"/>
-                        <segue destination="v4s-IU-BXy" kind="relationship" relationship="viewControllers" id="q52-Ov-tcK"/>
+                        <segue destination="Elw-FR-8Al" kind="relationship" relationship="viewControllers" id="h09-vW-6Y5"/>
+                        <segue destination="1o1-C4-7Ve" kind="relationship" relationship="viewControllers" id="i8t-1b-vZh"/>
+                        <segue destination="dn1-7d-R2F" kind="relationship" relationship="viewControllers" id="frV-qb-7Mw"/>
+                        <segue destination="OaV-QT-zC8" kind="relationship" relationship="viewControllers" id="Cy4-in-dAe"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="j3H-Li-VFW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1331" y="-1521"/>
+        </scene>
+        <!--Login View Controller-->
+        <scene sceneID="xvR-Mf-hIW">
+            <objects>
+                <viewController storyboardIdentifier="LoginViewController" id="L6E-np-lpP" customClass="LoginViewController" customModule="Instagram" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Cio-ou-8lX">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="k9S-Kp-fh9"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="D7E-rw-KZY"/>
+                    <connections>
+                        <segue destination="Mfj-G6-FpR" kind="custom" identifier="loginToDashboard" id="1q9-8Z-EzT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aWo-Si-bFp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3295.419847328244" y="-1650"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="5Qc-cR-QLG">
@@ -152,10 +192,11 @@
             </objects>
             <point key="canvasLocation" x="1323" y="-773"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Item-->
         <scene sceneID="8H0-Nw-BIg">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="1o1-C4-7Ve" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="8Lb-PM-DFj"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="qWg-QZ-L3U">
                         <rect key="frame" x="0.0" y="59" width="393" height="44"/>
@@ -170,10 +211,11 @@
             </objects>
             <point key="canvasLocation" x="607" y="-773"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Item-->
         <scene sceneID="T1x-Yd-5Wa">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Elw-FR-8Al" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="in1-pK-Pfs"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="HGy-VT-C7F">
                         <rect key="frame" x="0.0" y="59" width="393" height="44"/>
@@ -188,10 +230,11 @@
             </objects>
             <point key="canvasLocation" x="2743" y="-776"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Item-->
         <scene sceneID="WCl-1I-BJl">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="dn1-7d-R2F" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="ECx-aw-1tK"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="O3p-3v-veO">
                         <rect key="frame" x="0.0" y="59" width="393" height="44"/>
@@ -207,24 +250,21 @@
             <point key="canvasLocation" x="2022" y="-773"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="q52-Ov-tcK"/>
-        <segue reference="ih7-Uh-WCp"/>
-        <segue reference="xEI-Jw-FHv"/>
-        <segue reference="P4f-UQ-CvU"/>
-        <segue reference="BAf-EH-DAl"/>
-    </inferredMetricsTieBreakers>
     <resources>
         <image name="heart" catalog="system" width="128" height="107"/>
         <image name="house" catalog="system" width="128" height="104"/>
         <image name="magnifyingglass" catalog="system" width="128" height="117"/>
         <image name="person" catalog="system" width="128" height="121"/>
         <image name="plus" catalog="system" width="128" height="113"/>
+        <image name="square.and.arrow.up.circle.fill" catalog="system" width="128" height="123"/>
         <systemColor name="labelColor">
             <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

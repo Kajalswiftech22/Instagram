@@ -36,12 +36,18 @@ class ProfileViewController: UIViewController {
                                                             target: self,
                                                             action: #selector(didTapSettingsButton))
     }
-    
     @objc private func didTapSettingsButton() {
         let vc = SettingsViewController()
         vc.title = "Settings"
         navigationController?.pushViewController(vc, animated: true)
     }
+    
+    @IBAction func click(_ sender: Any) {
+        let sb = UIStoryboard(name: "Main", bundle: nil)
+        let vc = sb.instantiateViewController(withIdentifier: "NotificationViewController") as! NotificationViewController
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
+
 }
 
 extension ProfileViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {

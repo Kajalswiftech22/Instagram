@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0121942064C6C34C5D97AA87 /* Pods_Instagram.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB9FF3D31DBF32D9A5A6D0BD /* Pods_Instagram.framework */; };
+		99760E9F2A5591A300698CA0 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99760E9E2A5591A300698CA0 /* TabBarViewController.swift */; };
 		EC9178F22A528C3E0032853B /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9178F12A528C3E0032853B /* StorageManager.swift */; };
 		EC9178F42A52918A0032853B /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9178F32A52918A0032853B /* Extensions.swift */; };
 		ECE62E002A513A5200965495 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECE62DFF2A513A5200965495 /* AppDelegate.swift */; };
@@ -37,6 +38,7 @@
 
 /* Begin PBXFileReference section */
 		8AAD52E13C9E0569A101B5D7 /* Pods-Instagram.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Instagram.release.xcconfig"; path = "Target Support Files/Pods-Instagram/Pods-Instagram.release.xcconfig"; sourceTree = "<group>"; };
+		99760E9E2A5591A300698CA0 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		BB9FF3D31DBF32D9A5A6D0BD /* Pods_Instagram.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Instagram.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D83115BF1AE643C0680BB7C6 /* Pods-Instagram.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Instagram.debug.xcconfig"; path = "Target Support Files/Pods-Instagram/Pods-Instagram.debug.xcconfig"; sourceTree = "<group>"; };
 		EC9178F12A528C3E0032853B /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
@@ -200,6 +202,7 @@
 				ECE62E2E2A513E9900965495 /* SearchResultViewController.swift */,
 				ECE62E302A513EFF00965495 /* PostEditorViewController.swift */,
 				ECE62E322A513F1600965495 /* PublishPostViewController.swift */,
+				99760E9E2A5591A300698CA0 /* TabBarViewController.swift */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -322,6 +325,7 @@
 			files = (
 				ECE62E272A513E3400965495 /* EditProfileViewController.swift in Sources */,
 				ECE62E1D2A513CC900965495 /* ProfileViewController.swift in Sources */,
+				99760E9F2A5591A300698CA0 /* TabBarViewController.swift in Sources */,
 				ECE62E332A513F1600965495 /* PublishPostViewController.swift in Sources */,
 				ECE62E192A513CAE00965495 /* ExploreViewController.swift in Sources */,
 				ECE62E1B2A513CC000965495 /* CameraViewController.swift in Sources */,
