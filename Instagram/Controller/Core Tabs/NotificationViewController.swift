@@ -7,23 +7,35 @@
 
 import UIKit
 
-class NotificationViewController: UIViewController {
+class NotificationViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
+    private let tableView: UITableView = {
+        let tableView = UITableView()
+        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
+        return tableView
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        configureNavigationBar()
+        view.addSubview(tableView)
+        view.backgroundColor = .systemBackground
+        tableView.delegate = self
+        tableView.dataSource = self
 
     }
     
-    private func  configureNavigationBar() {
-        navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "gear"),
-                                                            style: .done,
-                                                            target: self,
-                                                            action: #selector(didTapSettingsButton))
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        tableView.frame = view.bounds
     }
-    @objc private func didTapSettingsButton() {
-        let vc = SettingsViewController()
-        vc.title = "Settings"
-        navigationController?.pushViewController(vc, animated: true)
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 1
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        
+        return cell
     }
 }

@@ -83,6 +83,7 @@ class LoginViewController: UIViewController {
         
         loginButton.addTarget(self, action: #selector(didTapLoginButton), for: .touchUpInside)
         createAccountButton.addTarget(self, action: #selector(didTapCreateAccountButton), for: .touchUpInside)
+        
         addSubviews()
         view.backgroundColor = .systemBackground
         
@@ -124,8 +125,18 @@ class LoginViewController: UIViewController {
     }
    
     @objc private func didTapLoginButton() {
+        //dismiss the keyboard
         passwordTextField.resignFirstResponder()
         usernameEmailField.resignFirstResponder()
+        
+        let rootVC = UIStoryboard(name: "TabBar", bundle: nil).instantiateViewController(withIdentifier: "TabBarViewController") as! TabBarViewController
+        let navVC = UINavigationController()
+        navVC.setViewControllers([rootVC], animated: false)
+        navVC.modalPresentationStyle = .fullScreen
+        self.present(navVC, animated: false)
+//        self.navigationController?.pushViewController(rootVC, animated: true)
+
+        
         guard let usernameEmail = usernameEmailField.text, !usernameEmail.isEmpty,
               let password = passwordTextField.text, !password.isEmpty, password.count >= 8 else {
             return
@@ -142,9 +153,7 @@ class LoginViewController: UIViewController {
         AuthManager.shared.loginUser(username: username, email: email, password: password) {success in
             DispatchQueue.main.async {
                 if success {
-                    //user logged in
-                    self.performSegue(withIdentifier: "loginToDashboard", sender: nil)
-//                    self.dismiss(animated: true, completion: nil)
+                    self.dismiss(animated: true, completion: nil)
                 }
                 else{
                     //error occured
@@ -164,17 +173,6 @@ class LoginViewController: UIViewController {
         let vc = RegistrationViewController()
         vc.title = "Create Account"
         present(UINavigationController(rootViewController: vc), animated: true)
-    }
-    
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if (segue.identifier == "loginToDashboard") {
-            
-            if let secondVC = segue.destination as? TabBarViewController
-            {
-//                secondVC.get_image = imageView.image
-//                secondVC.image_name = txtEnterText.text
-            }
-        }
     }
 }
 

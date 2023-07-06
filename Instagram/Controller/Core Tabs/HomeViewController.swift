@@ -12,13 +12,13 @@ class HomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
+        view.backgroundColor = .systemBackground
+            
     }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        handleNotAuthenticated()
+//        handleNotAuthenticated()
 
     }
     private func handleNotAuthenticated() {

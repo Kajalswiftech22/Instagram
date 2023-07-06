@@ -21,5 +21,7 @@
 			</array>
 		</dict>
 	</dict>
+	<key>FirebaseAutomaticScreenReportingEnabled</key>
+	<false/>
 </dict>
 </plist>

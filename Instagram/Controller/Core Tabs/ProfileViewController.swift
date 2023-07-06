@@ -14,7 +14,7 @@ class ProfileViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .systemBackground
-        configureNavigationBar()
+//        self.configureNavigationBar()
         
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .vertical
@@ -30,22 +30,24 @@ class ProfileViewController: UIViewController {
         view.addSubview(collectionView)
     }
 
-    private func  configureNavigationBar() {
-        navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "gear"),
-                                                            style: .done,
-                                                            target: self,
-                                                            action: #selector(didTapSettingsButton))
-    }
+    override func viewDidLayoutSubviews() {
+            super.viewDidLayoutSubviews()
+            collectionView?.frame = view.bounds
+        }
+    
+//    private func  configureNavigationBar() {
+//
+//       self.navigationController?.navigationBar.tintColor = .black
+//        self.navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "gear"),
+//                                                            style: .done,
+//                                                            target: self,
+//                                                            action: #selector(didTapSettingsButton))
+//    }
+    
     @objc private func didTapSettingsButton() {
         let vc = SettingsViewController()
         vc.title = "Settings"
         navigationController?.pushViewController(vc, animated: true)
-    }
-    
-    @IBAction func click(_ sender: Any) {
-        let sb = UIStoryboard(name: "Main", bundle: nil)
-        let vc = sb.instantiateViewController(withIdentifier: "NotificationViewController") as! NotificationViewController
-        self.navigationController?.pushViewController(vc, animated: true)
     }
 
 }
