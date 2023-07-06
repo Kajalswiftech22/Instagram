@@ -21,6 +21,7 @@ class NotificationViewController: UIViewController, UITableViewDelegate, UITable
         view.backgroundColor = .systemBackground
         tableView.delegate = self
         tableView.dataSource = self
+        
 
     }
     
