@@ -19,6 +19,7 @@
 		EC32F59D2A57DD55002AC074 /* ProfileInfoHeaderCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC32F59C2A57DD55002AC074 /* ProfileInfoHeaderCollectionReusableView.swift */; };
 		EC32F59F2A57DD7C002AC074 /* ProfileTabsCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC32F59E2A57DD7C002AC074 /* ProfileTabsCollectionReusableView.swift */; };
 		EC32F5A12A57DDB2002AC074 /* PhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC32F5A02A57DDB2002AC074 /* PhotoCollectionViewCell.swift */; };
+		EC32F5A32A58067B002AC074 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC32F5A22A58067B002AC074 /* Models.swift */; };
 		EC9178F22A528C3E0032853B /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9178F12A528C3E0032853B /* StorageManager.swift */; };
 		EC9178F42A52918A0032853B /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9178F32A52918A0032853B /* Extensions.swift */; };
 		ECE62E002A513A5200965495 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECE62DFF2A513A5200965495 /* AppDelegate.swift */; };
@@ -61,6 +62,7 @@
 		EC32F59C2A57DD55002AC074 /* ProfileInfoHeaderCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileInfoHeaderCollectionReusableView.swift; sourceTree = "<group>"; };
 		EC32F59E2A57DD7C002AC074 /* ProfileTabsCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTabsCollectionReusableView.swift; sourceTree = "<group>"; };
 		EC32F5A02A57DDB2002AC074 /* PhotoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewCell.swift; sourceTree = "<group>"; };
+		EC32F5A22A58067B002AC074 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Models.swift; path = "Instagram/View/Cells/Home Feed/Models.swift"; sourceTree = SOURCE_ROOT; };
 		EC9178F12A528C3E0032853B /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
 		EC9178F32A52918A0032853B /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		ECE62DFC2A513A5200965495 /* Instagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Instagram.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -182,6 +184,7 @@
 		ECE62E132A513AE400965495 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				EC32F5A22A58067B002AC074 /* Models.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -403,6 +406,7 @@
 				EC9178F42A52918A0032853B /* Extensions.swift in Sources */,
 				EC32F59D2A57DD55002AC074 /* ProfileInfoHeaderCollectionReusableView.swift in Sources */,
 				ECE62E2D2A513E8E00965495 /* SearchViewController.swift in Sources */,
+				EC32F5A32A58067B002AC074 /* Models.swift in Sources */,
 				ECE62E042A513A5200965495 /* HomeViewController.swift in Sources */,
 				ECE62E3E2A518AC300965495 /* AuthManager.swift in Sources */,
 				ECE62E002A513A5200965495 /* AppDelegate.swift in Sources */,

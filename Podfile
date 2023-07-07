@@ -6,9 +6,11 @@ target 'Instagram' do
   use_frameworks!
 
 	pod 'Appirater'
+	pod 'SDWebImage'
 
   # Pods for Instagram
 	pod 'Moya'
+	
 
 # Firebase
 	pod 'Firebase/Core'
