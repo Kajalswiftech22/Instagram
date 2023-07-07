@@ -16,6 +16,9 @@
 		99785D3F2A5699C700924E6A /* IGFeedPostActionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99785D3E2A5699C700924E6A /* IGFeedPostActionTableViewCell.swift */; };
 		99785D412A5699D800924E6A /* IGFeedPostGeneralTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99785D402A5699D800924E6A /* IGFeedPostGeneralTableViewCell.swift */; };
 		EC22F9022A56DDB800F9BBA5 /* FormTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC22F9012A56DDB800F9BBA5 /* FormTableViewCell.swift */; };
+		EC32F59D2A57DD55002AC074 /* ProfileInfoHeaderCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC32F59C2A57DD55002AC074 /* ProfileInfoHeaderCollectionReusableView.swift */; };
+		EC32F59F2A57DD7C002AC074 /* ProfileTabsCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC32F59E2A57DD7C002AC074 /* ProfileTabsCollectionReusableView.swift */; };
+		EC32F5A12A57DDB2002AC074 /* PhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC32F5A02A57DDB2002AC074 /* PhotoCollectionViewCell.swift */; };
 		EC9178F22A528C3E0032853B /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9178F12A528C3E0032853B /* StorageManager.swift */; };
 		EC9178F42A52918A0032853B /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9178F32A52918A0032853B /* Extensions.swift */; };
 		ECE62E002A513A5200965495 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECE62DFF2A513A5200965495 /* AppDelegate.swift */; };
@@ -55,6 +58,9 @@
 		BB9FF3D31DBF32D9A5A6D0BD /* Pods_Instagram.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Instagram.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D83115BF1AE643C0680BB7C6 /* Pods-Instagram.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Instagram.debug.xcconfig"; path = "Target Support Files/Pods-Instagram/Pods-Instagram.debug.xcconfig"; sourceTree = "<group>"; };
 		EC22F9012A56DDB800F9BBA5 /* FormTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormTableViewCell.swift; sourceTree = "<group>"; };
+		EC32F59C2A57DD55002AC074 /* ProfileInfoHeaderCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileInfoHeaderCollectionReusableView.swift; sourceTree = "<group>"; };
+		EC32F59E2A57DD7C002AC074 /* ProfileTabsCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTabsCollectionReusableView.swift; sourceTree = "<group>"; };
+		EC32F5A02A57DDB2002AC074 /* PhotoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewCell.swift; sourceTree = "<group>"; };
 		EC9178F12A528C3E0032853B /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
 		EC9178F32A52918A0032853B /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		ECE62DFC2A513A5200965495 /* Instagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Instagram.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -120,6 +126,7 @@
 				99785D3C2A5699B600924E6A /* IGFeedPostHeaderTableViewCell.swift */,
 				99785D3E2A5699C700924E6A /* IGFeedPostActionTableViewCell.swift */,
 				99785D402A5699D800924E6A /* IGFeedPostGeneralTableViewCell.swift */,
+				EC32F5A02A57DDB2002AC074 /* PhotoCollectionViewCell.swift */,
 			);
 			path = "Home Feed";
 			sourceTree = "<group>";
@@ -131,6 +138,15 @@
 				8AAD52E13C9E0569A101B5D7 /* Pods-Instagram.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		EC32F59B2A57DD06002AC074 /* CollectionView Headers */ = {
+			isa = PBXGroup;
+			children = (
+				EC32F59C2A57DD55002AC074 /* ProfileInfoHeaderCollectionReusableView.swift */,
+				EC32F59E2A57DD7C002AC074 /* ProfileTabsCollectionReusableView.swift */,
+			);
+			path = "CollectionView Headers";
 			sourceTree = "<group>";
 		};
 		ECE62DF32A513A5200965495 = {
@@ -173,6 +189,7 @@
 		ECE62E142A513AED00965495 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				EC32F59B2A57DD06002AC074 /* CollectionView Headers */,
 				99785D382A5697B700924E6A /* Cells */,
 				ECE62E082A513A5300965495 /* Assets.xcassets */,
 				ECE62E172A513B4A00965495 /* Storyboard */,
@@ -373,6 +390,8 @@
 				99785D412A5699D800924E6A /* IGFeedPostGeneralTableViewCell.swift in Sources */,
 				ECE62E232A513DDC00965495 /* RegistrationViewController.swift in Sources */,
 				EC22F9022A56DDB800F9BBA5 /* FormTableViewCell.swift in Sources */,
+				EC32F5A12A57DDB2002AC074 /* PhotoCollectionViewCell.swift in Sources */,
+				EC32F59F2A57DD7C002AC074 /* ProfileTabsCollectionReusableView.swift in Sources */,
 				ECE62E312A513EFF00965495 /* PostEditorViewController.swift in Sources */,
 				99785D3A2A5697EA00924E6A /* IGFeedPostTableViewCell.swift in Sources */,
 				EC9178F22A528C3E0032853B /* StorageManager.swift in Sources */,
@@ -382,6 +401,7 @@
 				ECE62E2F2A513E9900965495 /* SearchResultViewController.swift in Sources */,
 				ECE62E212A513DCB00965495 /* LoginViewController.swift in Sources */,
 				EC9178F42A52918A0032853B /* Extensions.swift in Sources */,
+				EC32F59D2A57DD55002AC074 /* ProfileInfoHeaderCollectionReusableView.swift in Sources */,
 				ECE62E2D2A513E8E00965495 /* SearchViewController.swift in Sources */,
 				ECE62E042A513A5200965495 /* HomeViewController.swift in Sources */,
 				ECE62E3E2A518AC300965495 /* AuthManager.swift in Sources */,

@@ -7,17 +7,17 @@
 
 import UIKit
 
+struct EditProfileFormModel {
+    let label: String
+    let placeHolder: String
+    var value: String?
+}
+
 class EditProfileViewController: UIViewController,UITableViewDelegate, UITableViewDataSource {
-    
-    struct EditProfileFormModel {
-        let label: String
-        let placeHolder: String
-        var value: String?
-    }
     
     private let tableView: UITableView = {
         let tableView = UITableView(frame: .zero, style: .grouped)
-        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
+        tableView.register(FormTableViewCell.self, forCellReuseIdentifier: FormTableViewCell.identifier)
         return tableView
     }()
 
@@ -60,11 +60,11 @@ class EditProfileViewController: UIViewController,UITableViewDelegate, UITableVi
             models.append(section2)
     }
     @objc private func didTapSave() {
-        
+        dismiss(animated: true, completion: nil)
     }
     
    @objc private func didTapCancel() {
-        
+       dismiss(animated: true, completion: nil)
     }
     
     @objc private func didChangeProfilePicture() {
@@ -103,6 +103,8 @@ class EditProfileViewController: UIViewController,UITableViewDelegate, UITableVi
     @objc private func didTapProfilePhotoButton() {
         
     }
+    
+    //Mark: - Table View
     func numberOfSections(in tableView: UITableView) -> Int {
         return models.count
     }
@@ -112,15 +114,23 @@ class EditProfileViewController: UIViewController,UITableViewDelegate, UITableVi
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let model = models[indexPath.section][indexPath.row]
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-        cell.textLabel?.text = model.label
+        let cell = tableView.dequeueReusableCell(withIdentifier: FormTableViewCell.identifier, for: indexPath) as! FormTableViewCell
+        cell.configure(with: model)
+        cell.delegate = self
         return cell
     }
     
-    func tableView(_ tableView: UITableView, titleForFooterInSection section: Int) -> String? {
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         guard section == 1 else {
             return nil
         }
         return "Private Information"
+    }
+    }
+
+extension EditProfileViewController: FormTableViewCellDelegate {
+    func formTableViewCell(_cell: FormTableViewCell, didUpdateField updatedModel: EditProfileFormModel?) {
+        //Update the model
+       
     }
 }
