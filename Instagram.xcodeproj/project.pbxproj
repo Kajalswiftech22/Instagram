@@ -20,6 +20,8 @@
 		EC32F59F2A57DD7C002AC074 /* ProfileTabsCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC32F59E2A57DD7C002AC074 /* ProfileTabsCollectionReusableView.swift */; };
 		EC32F5A12A57DDB2002AC074 /* PhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC32F5A02A57DDB2002AC074 /* PhotoCollectionViewCell.swift */; };
 		EC32F5A32A58067B002AC074 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC32F5A22A58067B002AC074 /* Models.swift */; };
+		EC4658622A5AAB6A003B654B /* UserFollowTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4658612A5AAB6A003B654B /* UserFollowTableViewCell.swift */; };
+		EC4658642A5AC72B003B654B /* NoNotificationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4658632A5AC72B003B654B /* NoNotificationsView.swift */; };
 		EC9178F22A528C3E0032853B /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9178F12A528C3E0032853B /* StorageManager.swift */; };
 		EC9178F42A52918A0032853B /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9178F32A52918A0032853B /* Extensions.swift */; };
 		ECE62E002A513A5200965495 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECE62DFF2A513A5200965495 /* AppDelegate.swift */; };
@@ -63,6 +65,8 @@
 		EC32F59E2A57DD7C002AC074 /* ProfileTabsCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTabsCollectionReusableView.swift; sourceTree = "<group>"; };
 		EC32F5A02A57DDB2002AC074 /* PhotoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewCell.swift; sourceTree = "<group>"; };
 		EC32F5A22A58067B002AC074 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Models.swift; path = "Instagram/View/Cells/Home Feed/Models.swift"; sourceTree = SOURCE_ROOT; };
+		EC4658612A5AAB6A003B654B /* UserFollowTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserFollowTableViewCell.swift; sourceTree = "<group>"; };
+		EC4658632A5AC72B003B654B /* NoNotificationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoNotificationsView.swift; sourceTree = "<group>"; };
 		EC9178F12A528C3E0032853B /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
 		EC9178F32A52918A0032853B /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		ECE62DFC2A513A5200965495 /* Instagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Instagram.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -129,6 +133,7 @@
 				99785D3E2A5699C700924E6A /* IGFeedPostActionTableViewCell.swift */,
 				99785D402A5699D800924E6A /* IGFeedPostGeneralTableViewCell.swift */,
 				EC32F5A02A57DDB2002AC074 /* PhotoCollectionViewCell.swift */,
+				EC4658612A5AAB6A003B654B /* UserFollowTableViewCell.swift */,
 			);
 			path = "Home Feed";
 			sourceTree = "<group>";
@@ -196,6 +201,7 @@
 				99785D382A5697B700924E6A /* Cells */,
 				ECE62E082A513A5300965495 /* Assets.xcassets */,
 				ECE62E172A513B4A00965495 /* Storyboard */,
+				EC4658632A5AC72B003B654B /* NoNotificationsView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -393,8 +399,10 @@
 				99785D412A5699D800924E6A /* IGFeedPostGeneralTableViewCell.swift in Sources */,
 				ECE62E232A513DDC00965495 /* RegistrationViewController.swift in Sources */,
 				EC22F9022A56DDB800F9BBA5 /* FormTableViewCell.swift in Sources */,
+				EC4658642A5AC72B003B654B /* NoNotificationsView.swift in Sources */,
 				EC32F5A12A57DDB2002AC074 /* PhotoCollectionViewCell.swift in Sources */,
 				EC32F59F2A57DD7C002AC074 /* ProfileTabsCollectionReusableView.swift in Sources */,
+				EC4658622A5AAB6A003B654B /* UserFollowTableViewCell.swift in Sources */,
 				ECE62E312A513EFF00965495 /* PostEditorViewController.swift in Sources */,
 				99785D3A2A5697EA00924E6A /* IGFeedPostTableViewCell.swift in Sources */,
 				EC9178F22A528C3E0032853B /* StorageManager.swift in Sources */,
